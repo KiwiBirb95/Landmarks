@@ -9,11 +9,17 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List(landmarks, id:\.id) { landmark in
-            LandmarkRow(landmark: landmark)
-//            LandmarkRow(landmark: landmarks[1])
+        // Will be deprecated soon
+        NavigationView {
+            List(landmarks, id:\.id) { landmark in
+                NavigationLink {
+                    LandmarkDetail(landmark: landmarks[1])
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Landmarks")
         }
-        
     }
 }
 
