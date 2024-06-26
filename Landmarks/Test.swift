@@ -15,5 +15,5 @@ struct Test: View {
 }
 
 #Preview {
-    Test(landmark: landmarks[4])
+    Test(landmark: ModelData().landmarks[4])
 }
