@@ -47,6 +47,7 @@ struct LandmarkDetail: View {
                 Text("About \(landmark.name)")
                     .font(.title2)
                 Text(landmark.description)
+                
             }
             .padding()
             Spacer()
