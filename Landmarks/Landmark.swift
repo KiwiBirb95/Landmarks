@@ -11,14 +11,17 @@ import CoreLocation
 
 struct Landmark: Hashable, Codable, Identifiable {
     
+    // Propeerties of the Landmark
     var id: Int
     var name:String
     var park:String
     var state:String
     var description:String
     var isFavorite:Bool
+    var isFeatured:Bool
     
     var category:Category
+    // Enum to categorize landmarks
     enum Category:String, CaseIterable, Codable {
         case lakes = "Lakes"
         case rivers = "Rivers"
@@ -26,6 +29,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     }
     
     private var imageName:String
+    // Computed property to create Image from imageName
     var image: Image{
         Image(imageName)
     }
@@ -37,6 +41,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     
     private var coordinates:Coordinates
     
+    // Computed property ot create coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FavoriteButton: View {
+    // Allows the view to modify state
     @Binding var isSet: Bool
     
     var body: some View {

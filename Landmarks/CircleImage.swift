@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CircleImage: View {
+    // Property holds Image object
     var image: Image
     var body: some View {
         image

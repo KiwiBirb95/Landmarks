@@ -18,6 +18,7 @@ struct LandmarkRow: View {
             
             Spacer()
             
+            // Conditionally dispay a filled star if landmark is a favorite
             if landmark.isFavorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
