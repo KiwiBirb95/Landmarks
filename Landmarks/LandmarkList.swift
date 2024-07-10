@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // Wrapper to access shared data
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = true
     
+    // Property to filter landmarks based on showFavoritesOnly state
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
@@ -24,7 +26,9 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly){
                     Text("Favorites Only")
                 }
+                // Iterates over filtered landmarks array, creating a row for each
                 ForEach(filteredLandmarks) { landmark in
+                    // Create laink to LandmarkDetail when tapped
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                         LandmarkRow(landmark: landmark)
                     }

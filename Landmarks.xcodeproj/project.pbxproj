@@ -75,7 +75,6 @@
 		5727010C2C151FC100F345E4 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				5727011B2C151FCB00F345E4 /* Resources */,
 				5743B0752C335E57004C38C6 /* CategoryHome.swift */,
 				5743B0792C336E36004C38C6 /* CategoryItem.swift */,
 				5743B0772C336533004C38C6 /* CategoryRow.swift */,
@@ -89,6 +88,7 @@
 				57F882282C1A593F00ABE910 /* LandmarkDetail.swift */,
 				57F882262C1A556F00ABE910 /* LandmarkList.swift */,
 				57F882242C1A521A00ABE910 /* LandmarkRow.swift */,
+				5727011B2C151FCB00F345E4 /* Resources */,
 				572701112C151FC200F345E4 /* Assets.xcassets */,
 				572701132C151FC200F345E4 /* Preview Content */,
 			);

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Shows LandmarkList()
     var body: some View {
         LandmarkList()
     }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoryItem: View {
+    // Property which holds Landmark object
     var landmark: Landmark
     
     var body: some View {

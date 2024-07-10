@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CategoryRow: View {
+    // Holds name of category
     var categoryName: String
+    // Holds array of Landmark objects
     var items: [Landmark]
     
     var body: some View {
@@ -17,6 +19,7 @@ struct CategoryRow: View {
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 5)
+            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { landmark in
