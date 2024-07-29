@@ -11,6 +11,8 @@ final class ModelData: ObservableObject {
     // Wrapper to automatically make changes, where landmark data is loaded from JSON
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     
+    @Published var profile = Profile.default
+    
     // Filter to select every landmark in the [Landmark] array that isfeatured
     var features: [Landmark] {
         landmarks.filter{ $0.isFeatured }

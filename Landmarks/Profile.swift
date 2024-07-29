@@ -9,7 +9,7 @@ import Foundation
 
 struct Profile {
     var username: String
-    var prefixNotifications = true
+    var prefersNotifications = true
     var seasonalPhoto = Season.winter
     
     static let `default` = Profile(username: "Kiwi")
